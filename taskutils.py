@@ -1,4 +1,4 @@
-# Created by Massimo Di Pierro @ 2016, BSD v3 License
+# Created by Massimo Di Pierro (http://experts4solutions.com) @2016 BSDv3 License
 import time
 import threading
 import traceback

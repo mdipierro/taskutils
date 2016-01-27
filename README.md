@@ -70,5 +70,5 @@ This makes sure that the excution of functions f and g is never concurrent.
 
 ## License
 
-BSD version 3
+Created by Massimo Di Pierro (http://experts4solutions.com) @2016 BSDv3 License
 
