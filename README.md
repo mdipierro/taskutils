@@ -12,6 +12,10 @@ It can used to power more complex programs that need concurrency, for example a 
 
 Here is an example of usage:
 
+### Install it
+
+    pip install taskutils
+
 ### Import the relevant objects
 
     from taskutils import TaskHandler, Task, Recurrent
