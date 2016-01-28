@@ -1,4 +1,4 @@
-# Created by Massimo Di Pierro (http://experts4solutions.com) @2016 BSDv3 License
+# Created by Massimo Di Pierro @ 2016, BSD v3 License
 import time
 import threading
 import traceback
@@ -51,7 +51,7 @@ class WorkerThread(threading.Thread):
                     print exc
                     if task.logger: task.logger.warn('task error:\n%s' % exc)
                     task.failures += 1
-                    if task.resubmit_on_failure and task.failures < self.repeats_on_failure:
+                    if task.repeats_on_failure and task.failures < task.repeats_on_failure:
                         self.handler.enqueue_task(task)          
                         if task.logger: task.logger.info('resubmitted')
             else:
