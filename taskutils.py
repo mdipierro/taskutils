@@ -21,10 +21,6 @@ class LockWrapper(object):
         
 with_tasks_queue_lock = LockWrapper()
 
-class FileWrapper(object):
-    def __init__(self, filename):
-        self.filename = filename    
-
 class WorkerThread(threading.Thread):
     """
     The plan is to for the server to create a fixed number of worker threads which
